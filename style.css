@@ -126,4 +126,41 @@ form button {
 }
 form button:hover {
         background-color: #2980b9;
+
 }
+h1 { color: #537ca4;
+     background-color:#c6e4e9;
+     text-align: center;
+}    
+.alamat {
+   background-color: #dae6e8;
+   border: 1px solid #ddd;
+   padding: 15px;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);}
+.event {
+            margin-bottom: 25px;
+            padding: 15px;
+            border-left: 5px solid #cdcce4;
+            background-color: #cedce8;
+        }
+        .event h2 {
+            margin-top: 0;
+        }
+        .highlight {
+            color: #5d75b3;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #6c63ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #574fd6;
+        }
