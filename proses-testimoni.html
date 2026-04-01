@@ -4,11 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Semua Testimoni - Toko Buku Aisyah Tsabitah</title>
-<link rel="stylesheet" href="style.css"/>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ebebeb;
+  color: #07040f;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #537ca4;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c6e4e9;
+  transform: scale(1.1);
+}
+
+/* HEADER */
+h1 {
+  text-align: center;
+  margin: 15px 0;
+  color: #537ca4;
+  background-color: #c6e4e9;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeDown 1s ease;
+}
+
+/* KONFIRMASI */
+.konfirmasi {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #d8e5e7;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeUp 1s ease;
+  text-align: center;
+}
+
+.konfirmasi a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.konfirmasi a:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* ANIMASI */
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #537ca4;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+</style>
 </head>
 <body>
 
-<nav> <a href="index.html">Beranda</a>
+<nav> 
+  <a href="index.html">Beranda</a>
   <a href="produk.html">Produk</a>
   <a href="bedah-buku.html">Bedah Buku</a>
   <a href="testimoni.html">Testimoni</a>
@@ -16,6 +106,7 @@
   <a href="kontak.html">Kontak</a>
   <a href="event.html">Event</a>
 </nav>
+
 <main class="konfirmasi">
     <h1>Terima Kasih!</h1>
     <h1>Testimoni Anda telah berhasil dikirim.</h1>
@@ -27,7 +118,6 @@
 <footer>
     <p>&copy; 2025 Toko Buku Aisyah Tsabitah</p>
 </footer>
+
 </body>
 </html>
-
-
