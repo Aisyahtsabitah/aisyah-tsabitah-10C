@@ -1,25 +1,157 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Profil Usaha Buku</title>
-<link rel="stylesheet" href="style.css" />
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #ebebeb;
+  color: #07040f;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #537ca4;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c6e4e9;
+  transform: scale(1.1);
+}
+
+/* HEADER */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  color: #537ca4;
+  background-color: #c6e4e9;
+  padding: 10px;
+  border-radius: 5px;
+  animation: fadeDown 1s ease;
+}
+
+/* ARTIKEL / BEDAH BUKU */
+.artikel {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #daedf3;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeUp 1s ease;
+}
+
+.artikel .penulis {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.artikel .sampul {
+  width: 180px;
+  float: right;
+  margin: 0 0 20px 20px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  animation: fadeRight 1s ease;
+}
+
+.artikel blockquote {
+  font-style: italic;
+  padding-left: 20px;
+  margin: 20px 0;
+  border-left: 4px solid #d4d6d6;
+  color: #444;
+  background-color: #ccdde8;
+  animation: fadeLeft 1s ease;
+}
+
+/* ANIMASI */
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeRight {
+  from {opacity: 0; transform: translateX(20px);}
+  to {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeLeft {
+  from {opacity: 0; transform: translateX(-20px);}
+  to {opacity: 1; transform: translateX(0);}
+}
+
+/* LINK KEMBALI */
+.btn-kembali {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 16px;
+  background-color: #537ca4;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.btn-kembali:hover {
+  background-color: #3e5f80;
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background-color: #537ca4;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 5px;
+  clear: both;
+}
+</style>
+
 </head>
 <body>
-<nav> <a href="index.html">Beranda</a>
+
+<nav>
+  <a href="index.html">Beranda</a>
   <a href="produk.html">Produk</a>
   <a href="bedah-buku.html">Bedah Buku</a>
   <a href="testimoni.html">Testimoni</a>
   <a href="tampil-testimoni.html">Testimoni Pembeli</a>
   <a href="kontak.html">Kontak</a>
- <a href="event.html">Event</a>
+  <a href="event.html">Event</a>
 </nav>
+
 <h1>Toko Buku Aisyah Tsabitah</h1>
 
 <main class="artikel">
     <h2>Bedah Buku: Negeri 5 Menara</h2>
     <p class="penulis">Ditulis oleh: Ahmad Fuadi</p>
-    <img src="buku 8.webp" alt="Sampul Negeri 5 Menara" class="sampul"
+    <img src="buku 8.webp" alt="Sampul Negeri 5 Menara" class="sampul"/>
 <p>
     Buku ini menceritakan perjalanan hidup Alif, 
  seorang anak Minang yang menempuh pendidikan di pondok
@@ -51,7 +183,7 @@
 <main class="artikel">
     <h2>Bedah Buku: Kitab Manhaj & Aqidah</h2>
     <p class="penulis">Ditulis oleh: Abu Unaisah Abdul Hakim bin Amir Abdad</p>
-    <img src="buku 1.jpg" alt="Sampul Kitab Manhaj & Aqidah" class="sampul"
+    <img src="buku 1.jpg" alt="Sampul Kitab Manhaj & Aqidah" class="sampul"/>
 <p> 
     Kitab ini menngumpulkan hadits-hadits shahih dalam bab-bab Manhaj
  dan Aqidah seperti: Sifat-sifat Allah khususnya sifat Al'Uluw (Ketinggian Allah)
@@ -78,14 +210,11 @@
 </main>
 </section>
 
-<a href="produk.html" class="btn-kembali">kembali ke 
-    katalog</a>
-</main>
+<a href="produk.html" class="btn-kembali">kembali ke katalog</a>
+
 <footer>
     <p>&copy; 2025 Toko Buku Aisyah Tsabitah</p>
 </footer>
+
 </body>
-
 </html>
-
-
