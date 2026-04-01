@@ -1,40 +1,141 @@
+<!DOCTYPE html>
 <html lang="id">
-<head> <meta charset="UTF-8" />
-       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-       <title>Event - Pameran Buku</title>
-       <link rel="stylesheet" href="style.css" /> </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Event - Pameran Buku</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ebebeb;
+  color: #07040f;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #537ca4;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c6e4e9;
+  transform: scale(1.1);
+}
+
+/* HEADER */
+h1 {
+  color: #537ca4;
+  background-color: #c6e4e9;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  animation: fadeDown 1s ease;
+}
+
+p {
+  text-align: center;
+}
+
+/* EVENT BOX */
+.event {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  background-color: #cedce8;
+  border-left: 5px solid #cdcce4;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeUp 1s ease;
+}
+
+.event h2 {
+  margin-top: 0;
+  color: #010c18;
+}
+
+.highlight {
+  color: #5d75b3;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #6c63ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #574fd6;
+  transform: scale(1.05);
+}
+
+/* ANIMASI */
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
 <body>
-  <nav> <a href="index.html">Beranda</a>
-        <a href="produk.html">Produk</a>
-        <a href="bedah-buku.html">Bedah Buku</a>
-        <a href="testimoni.html">Testimoni</a>
-        <a href="tampil-testimoni.html">Testimoni Pembeli</a>
-        <a href="kontak.html">Kontak</a>
-        <a href="event.html">Event</a>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="produk.html">Produk</a>
+  <a href="bedah-buku.html">Bedah Buku</a>
+  <a href="testimoni.html">Testimoni</a>
+  <a href="tampil-testimoni.html">Testimoni Pembeli</a>
+  <a href="kontak.html">Kontak</a>
+  <a href="event.html">Event</a>
 </nav>
+
 <h1>Event & Promo Spesial</h1>
 <p>Pameran Buku dan Diskon Menarik!</p>
 
-    <div class="event">
-        <h2>📚 Pameran Buku 2026</h2>
-        <p><strong>Tanggal:</strong> 10 - 15 April 2026</p>
-        <p><strong>Lokasi:</strong> Aula Utama</p>
-        <p> Nikmati berbagai koleksi buku terbaru mulai dari novel, buku pelajaran,
-            hingga buku islami dengan harga spesial.
-        </p>
-        <p class="highlight">Diskon hingga 50% untuk semua kategori buku!</p>
-        <a href="kontak.html" class="btn">Hubungi Kami</a>
-    </div>
+<div class="event">
+    <h2>📚 Pameran Buku 2026</h2>
+    <p><strong>Tanggal:</strong> 10 - 15 April 2026</p>
+    <p><strong>Lokasi:</strong> Aula Utama</p>
+    <p> Nikmati berbagai koleksi buku terbaru mulai dari novel, buku pelajaran,
+        hingga buku islami dengan harga spesial.
+    </p>
+    <p class="highlight">Diskon hingga 50% untuk semua kategori buku!</p>
+    <a href="kontak.html" class="btn">Hubungi Kami</a>
+</div>
 
-    <div class="event">
-        <h2>🔥 Diskon Akhir Pekan</h2>
-        <p><strong>Tanggal:</strong> Setiap Sabtu & Minggu</p>
-        <p> Dapatkan potongan harga <span class="highlight">30%</span> untuk pembelian
-            minimal Rp100.000.
-        </p>
-        <p>Promo berlaku selama persediaan masih ada.</p>
-        <a href="kontak.html" class="btn">Info Selengkapnya</a>
-    </div>
+<div class="event">
+    <h2>🔥 Diskon Akhir Pekan</h2>
+    <p><strong>Tanggal:</strong> Setiap Sabtu & Minggu</p>
+    <p> Dapatkan potongan harga <span class="highlight">30%</span> untuk pembelian
+        minimal Rp100.000.
+    </p>
+    <p>Promo berlaku selama persediaan masih ada.</p>
+    <a href="kontak.html" class="btn">Info Selengkapnya</a>
+</div>
 
 </body>
 </html>
