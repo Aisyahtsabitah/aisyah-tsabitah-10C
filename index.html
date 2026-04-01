@@ -3,12 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profil Usaha Buku</title>
-<link rel="stylesheet" href="style.css" />
+<title>Toko Buku Aisyah Tsabitah</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+}
+
+/* NAVBAR */
+nav {
+  background: #4CAF50;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+
+/* HEADER */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  animation: fadeDown 1s ease;
+}
+
+p {
+  text-align: center;
+}
+
+/* ANIMASI */
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* KATEGORI */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  animation: fadeUp 1s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: #f1fff3;
+}
+
+/* ANIMASI */
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+</style>
+
 </head>
 <body>
 
-<nav> <a href="index.html">Beranda</a>
+<nav>
+  <a href="index.html">Beranda</a>
   <a href="produk.html">Produk</a>
   <a href="bedah-buku.html">Bedah Buku</a>
   <a href="testimoni.html">Testimoni</a>
@@ -16,26 +99,42 @@
   <a href="kontak.html">Kontak</a>
   <a href="event.html">Event</a>
 </nav>
-<h1>Selamat Datang di Toko Buku Aisyah Tsabitah</h1>
-<p>Website ini berisi informasi tentang produk buku, bedah
-buku, dan testimoni pelanggan.</p>
-<h2>Jenis-Jenis Buku Yang Kami Jual</h2>
-<p>Kami menyediakan berbagai jenis buku yang cocok untuk semua kalangan, mulai dari anak-anak hingga orang dewasa. Berikut beberapa kategori utama yang tersedia di Toko Buku Aisyah Tsabitah:</p>
-<ul>
-<li><strong>Buku Pelajaran Sekolah</strong>: Matematika, Bahasa Indonesia, IPA, IPS, PPKN, dan yang lainnya untuk tingkat SD, SMP, hingga SMA.</li>
-<li><strong>Novel Fiksi</strong>: Novel remaja, cerita cinta, fiksi ilmiah, dan misteri dari penulis lokal maupun internasional.</li>
-<li><strong>Buku Motivasi dan Pengembangan Diri</strong>: Buku-buku inspiratif seperti "alomic habits", "Berani Tidak Disukai", dan lainnya.</li>
-<li><strong>Buku Anak-Anak</strong>:  Buku cerita bergambar, buku aktivitas, dan edukasi dini seperti "Belajar Huruf & Angka".</li>
-<li><strong>Buku Aqidah dan Hadits</strong>: Kitab-kitab tentang aqidah, keyakinan Islam, serta hadits-hadits shahih dan penjelasannya.</li>
-</ul>
+
+<h1>📚 Selamat Datang di Toko Buku Aisyah Tsabitah</h1>
+<p>Temukan berbagai buku menarik untuk semua kalangan ✨</p>
+
+<div class="container">
+  <h2>Jenis-Jenis Buku</h2>
+
+  <div class="card">
+    <strong>Buku Pelajaran</strong>
+    <p>Matematika, Bahasa Indonesia, IPA, IPS untuk SD hingga SMA.</p>
+  </div>
+
+  <div class="card">
+    <strong>Novel Fiksi</strong>
+    <p>Romantis, misteri, hingga fiksi ilmiah dari penulis terbaik.</p>
+  </div>
+
+  <div class="card">
+    <strong>Motivasi & Pengembangan Diri</strong>
+    <p>Seperti Atomic Habits dan buku inspiratif lainnya.</p>
+  </div>
+
+  <div class="card">
+    <strong>Buku Anak</strong>
+    <p>Buku bergambar dan edukasi untuk anak-anak.</p>
+  </div>
+
+  <div class="card">
+    <strong>Buku Aqidah & Hadits</strong>
+    <p>Pembelajaran Islam yang lengkap dan terpercaya.</p>
+  </div>
+</div>
 
 <footer>
-    <p>&copy; 2025 Toko Buku Aisyah Tsabitah</p>
+  <p>&copy; 2025 Toko Buku Aisyah Tsabitah</p>
 </footer>
+
 </body>
 </html>
-
-
-
-
-
