@@ -8,27 +8,29 @@
 <style>
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  margin: 20px;
+  background-color: #ebebeb;
+  color: #07040f;
 }
 
 /* NAVBAR */
 nav {
-  background: #4CAF50;
-  padding: 15px;
+  background-color: #537ca4;
+  padding: 12px;
   text-align: center;
+  border-radius: 5px;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
   transition: 0.3s;
 }
 
 nav a:hover {
-  color: yellow;
+  color: #c6e4e9;
   transform: scale(1.1);
 }
 
@@ -37,6 +39,10 @@ h1 {
   text-align: center;
   margin-top: 30px;
   animation: fadeDown 1s ease;
+  color: #537ca4;
+  background-color: #c6e4e9;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 p {
@@ -49,6 +55,11 @@ p {
   to {opacity: 1; transform: translateY(0);}
 }
 
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
 /* KATEGORI */
 .container {
   max-width: 900px;
@@ -57,33 +68,35 @@ p {
 }
 
 .card {
-  background: white;
+  background-color: #cbe4eb;
   padding: 15px;
   margin: 15px 0;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: 0.3s;
   animation: fadeUp 1s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  background: ;
+  background-color: #dae6e8;
 }
 
-/* ANIMASI */
-@keyframes fadeUp {
-  from {opacity: 0; transform: translateY(20px);}
-  to {opacity: 1; transform: translateY(0);}
+.card strong {
+  color: #2c3e50;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  background: #333;
+  background-color: #537ca4;
   color: white;
   padding: 10px;
   margin-top: 30px;
+  border-radius: 5px;
 }
 </style>
 
