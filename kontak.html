@@ -1,41 +1,158 @@
+<!DOCTYPE html>
 <html lang="id">
-<head> <meta charset="UTF-8" />
-       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-       <title>Kontak Kami</title>
-       <link rel="stylesheet" href="style.css" /> </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontak Kami - Toko Buku Aisyah Tsabitah</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #ebebeb;
+  color: #07040f;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #537ca4;
+  padding: 12px;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #c6e4e9;
+  transform: scale(1.1);
+}
+
+/* HEADER */
+h1 {
+  color: #537ca4;
+  background-color: #c6e4e9;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  animation: fadeDown 1s ease;
+}
+
+/* SUBHEADER */
+h2 {
+  color: #010c18;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* ALAMAT KONTAK */
+.alamat {
+  background-color: #dae6e8;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 0 auto 20px auto;
+  max-width: 700px;
+  animation: fadeUp 1s ease;
+}
+
+/* FORM KONTAK */
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #d8e5e7;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  animation: fadeUp 1s ease;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* ANIMASI */
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
 <body>
-  <nav> <a href="index.html">Beranda</a>
-        <a href="produk.html">Produk</a>
-        <a href="bedah-buku.html">Bedah Buku</a>
-        <a href="testimoni.html">Testimoni</a>
-        <a href="tampil-testimoni.html">Testimoni Pembeli</a>
-        <a href="kontak.html">Kontak</a>
-        <a href="event.html">Event</a>
+
+<nav>
+  <a href="index.html">Beranda</a>
+  <a href="produk.html">Produk</a>
+  <a href="bedah-buku.html">Bedah Buku</a>
+  <a href="testimoni.html">Testimoni</a>
+  <a href="tampil-testimoni.html">Testimoni Pembeli</a>
+  <a href="kontak.html">Kontak</a>
+  <a href="event.html">Event</a>
 </nav>
+
 <h1>Kontak</h1>
 
 <div class="alamat">
-        <h2>Alamat Toko</h2>
-        <p><strong>Nama Toko:</strong> Toko Buku Aisyah Tsabitah</p>
-        <p><strong>Alamat:</strong> Jalan Besuk, RT.11/RW.04, Besuk, Sambungrejo, Kecamatan Sukodono, Kabupaten Sidoarjo, Jawa Timur 61258, Indonesia </p>
-        <p><strong>Email:</strong> tokobukuaisyah@email.com</p>
-        <p><strong>Telepon:</strong> +62 822 4169 6699 </p>
+  <h2>Alamat Toko</h2>
+  <p><strong>Nama Toko:</strong> Toko Buku Aisyah Tsabitah</p>
+  <p><strong>Alamat:</strong> Jalan Besuk, RT.11/RW.04, Besuk, Sambungrejo, Kecamatan Sukodono, Kabupaten Sidoarjo, Jawa Timur 61258, Indonesia</p>
+  <p><strong>Email:</strong> tokobukuaisyah@email.com</p>
+  <p><strong>Telepon:</strong> +62 822 4169 6699</p>
 </div>
 
 <h2>Form Kontak</h2>
-<<form action="proses_kontak.php" method="POST">
-        <label>Nama:</label>
-        <input type="text" name="nama" required>
+<form action="proses_kontak.php" method="POST">
+  <label>Nama:</label>
+  <input type="text" name="nama" required>
 
-        <label>Email:</label>
-        <input type="email" name="email" required>
+  <label>Email:</label>
+  <input type="email" name="email" required>
 
-        <label>Pesan:</label>
-        <textarea name="pesan" rows="5" required></textarea>
+  <label>Pesan:</label>
+  <textarea name="pesan" rows="5" required></textarea>
 
-        <button type="submit">Kirim Pesan</button>
-    </form>
-</div>
+  <button type="submit">Kirim Pesan</button>
+</form>
 
 </body>
 </html>
